@@ -1,0 +1,32 @@
+*:focus {
+  outline: none;
+  caret-color: transparent;
+}
+
+
+
+
+
+body{
+  margin: 0%;
+        padding: 0%;
+           width: 100vw;   
+      height: 100vh;  
+      background: rgb(40, 44, 45);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+#fileh{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(0, 255, 68);
+    border-radius: 5rem;
+    cursor: pointer;
+    user-select: none;
+}
+#fileh:hover{
+  background-color: rgb(13, 125, 43); ;
+}
