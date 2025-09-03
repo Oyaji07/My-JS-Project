@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bat Ball Stamp Game</h1>
+<!-- ............ For batting -->
+    <button class="butnm" id="Bat" onclick="
+     let computerLogic='Bat';
+     let computerbox= computerGame();
+    getResult(computerbox,computerLogic);
+     ">Bat</button>
+
+  <!-- .....................for ball -->
+    <button class="butnm" id="Ball"  onclick="
+     computerLogic='Ball';
+    computerbox= computerGame();
+    getResult(computerbox,computerLogic);
+   " >Ball</button>
+
+ <!-- .....................for stump -->
+    <button class="butnm" id="Stump"  onclick="
+     computerLogic='Stump';
+     computerbox=computerGame();
+    getResult(computerbox,computerLogic);
+   ">Stump</button>
+
+    <h3 id="results"></h3>
+     <!-- ....................Scripting -->
+    <script>
+        let Contentsss=document.querySelector(`#result`)
+        document.querySelector(`#results`).innerText=`Start The Game `
+     
+        function computerGame(){
+             let computerbox=Math.floor(Math.random()*3);;
+            if(computerbox===0){
+        computerbox='Bat';
+    }
+    else if(computerbox<=1){
+        computerbox='Ball';
+    }else {
+        computerbox='Stump';
+    }
+    return computerbox;  
+  }
+// ..........................final Result
+ function getResult(userMove, computerMove){
+  Contentsss=document.querySelector(`#result`)
+      if(computerMove===userMove){
+    alert(`It's a tie`);
+   document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMove} so it's a Tie `;
+    } 
+    else if(computerMove==='Bat' && userMove===`Ball`){
+    alert(`Computer wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMove} so Computer Win `;
+    } 
+else if(computerMove===`Bat` && userMove===`Stump`){
+      alert(`User wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMovec} so User Win `;
+}
+else if(computerMove===`Ball` && userMove===`Bat`){
+       alert(`User wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMove} so User Win `;
+}
+else if(computerMove===`Ball` && userMove===`Stump`){
+  alert(`Computer wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMove} so Computer Win `;
+}
+else if(computerMove===`Stump` && userMove===`Bat`){
+      alert(`Computer wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} yuserMove} so Computer Win `;
+}
+   else if(computerMove===`Stump` && userMove===`Ball`){
+       alert(`User wins`)
+    document.querySelector(`#results`).innerText=`Computer choose ${computerMove} you choose ${userMove} so User Win `;
+    }
+}
+    </script>
+    
+</body>
+</html>

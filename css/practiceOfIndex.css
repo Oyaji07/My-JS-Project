@@ -1,0 +1,11 @@
+ .class_button{
+          /*  color: rgb(228, 81, 81);*/
+            border: 0rem;
+            background-color: greenyellow;
+            padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+            border-radius: 2rem;
+        }
+#my_button{
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+  

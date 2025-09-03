@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+   text-align: center;
+}
+
+.Headk{
+color: aliceblue;
+background: #81a5ef;
+height: 3rem;
+}
+h3{
+    font-size: 2rem;
+    font-weight:500;
+}
+#Reset{
+  border-radius: 0%;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.allbtmn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.butnm{
+    padding: 3rem;
+    margin: 1rem;
+    border: 0.5px solid black;
+    border-radius: 50%;
+      background-color: rgba(22, 45, 100, 0.71);
+      cursor: pointer;
+}
+
+.butnm:hover{
+  background-color: rgba(18, 28, 51, 0.71);
+  color: azure;
+}
+.bigboss{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.scoreboard{
+  background: rgb(171, 171, 188);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5rem;
+  height: 7rem ;
+  width: 30rem;
+  
+}
+p{
+  height: 5rem;
+  width: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 5rem;
+}
+.msgContain{
+
+  height: 4rem;
+ display: flex;
+ justify-content: center;
+ align-items:center ;
+margin: 2rem;
+}
+.container{
+  background-color: rgb(105, 105, 105);
+  width: 20rem;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 10rem;
+}
+#displaymsg{
+  margin: 0.5rem;
+}

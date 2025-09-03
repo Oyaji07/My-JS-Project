@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="Headk">Cricket Game</h1>
+
+  <div class="allbtmn">
+    <button class="butnm" id="Bat" onclick="play('Bat')">Bat</button>
+    <button class="butnm" id="Ball" onclick="play('Ball')">Ball</button>
+    <button class="butnm" id="Stump" onclick="play('Stump')">Stump</button>
+  </div>
+
+  <div class="bigboss">
+    <div class="scoreboard">
+      <p id="one">0 <br> You </p>
+      <p id="three">0 <br> Tie</p>
+      <p id="two">0 <br> Comp</p>
+    </div>
+  </div>
+
+  <div class="msgContain">
+    <div class="container">
+      <h2 id="displaymsg">Let's play</h2>
+    </div>
+  </div>
+
+  <button id="Reset" onclick="reset()" aria-label="Reset game">
+    <img src="resetp.png" alt="Reset Game" height="80">
+  </button>
+
+  <script src="game.js"></script>
+</body>
+</html>

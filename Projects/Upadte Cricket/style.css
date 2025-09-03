@@ -1,0 +1,8 @@
+body{
+   text-align: center;
+}
+.butnm{
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 0.5px solid black;
+}

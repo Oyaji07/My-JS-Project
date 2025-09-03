@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="skelton">
+        <input type="text" id="inputb" class="inputb">
+        <button class="clearButton" onclick="document.querySelector('.inputb').value=''">Clear</button>
+
+        <div class="otherButton">
+            <button class="btnm" id="One"  type="button" value="1"
+            onclick="num=1;
+          document.querySelector('#inputb').value+=1;  ">1</button>
+
+            <button  class="btnm" id="Two" type="button" value="2"
+             onclick="num=2;
+          document.querySelector('#inputb').value+=num;  ">2</button>
+
+            <button class="btnm"  id="Thr" type="button" value="3"
+             onclick="num=3;
+          document.querySelector('#inputb').value+=num;  ">3</button>
+
+            <button class="btnm" id="Add" type="button" value="+"
+              onclick="num=`+`;
+          document.querySelector('#inputb').value+=num;  ">+</button>
+
+            <br><br>
+           <button class="btnm"   type="button" value="4"
+             onclick="num=4;
+          document.querySelector('#inputb').value+=num;  ">4</button>
+
+            <button  class="btnm"  type="button" value="5"
+              onclick="num=5;
+          document.querySelector('#inputb').value+=num;  ">5</button>
+
+            <button class="btnm"   type="button" value="6"   onclick="num=6;
+          document.querySelector('#inputb').value+=num;  ">6</button>
+
+            <button class="btnm"  type="button" value="-"  onclick="num=`-`;
+          document.querySelector('#inputb').value+=num;  ">-</button>
+             <br><br>
+           <button class="btnm"   type="button" value="7"   onclick="num=7;
+          document.querySelector('#inputb').value+=num;  ">7</button>
+
+            <button  class="btnm"  type="button" value="8"  onclick="num=8;
+          document.querySelector('#inputb').value+=num;  ">8</button>
+
+            <button class="btnm"   type="button" value="9" onclick="num=9;
+          document.querySelector('#inputb').value+=num;  ">9</button>
+
+            <button class="btnm"  type="button" value="/" onclick="num=`/`;
+          document.querySelector('#inputb').value+=num;  ">/</button>
+             <br><br>
+           <button class="btnm" id="Equal" type="button" value="0" onclick="num=0;
+          document.querySelector('#inputb').value+=num;  ">0</button>
+
+            <button class="btnm" type="button" value="=" 
+  onclick="document.querySelector('#inputb').value = eval(document.querySelector('#inputb').value)">
+  =
+</button>
+
+
+            <button class="btnm"   type="button" value="%" onclick="num=`%`;
+          document.querySelector('#inputb').value+=num;  ">%</button>
+
+            <button class="btnm"  type="button" value="*" onclick="num=`*`;
+          document.querySelector('#inputb').value+=num;  ">*</button>
+      <br><br>
+          <button class="btnm"  type="button"  onclick=";
+          document.querySelector('#inputb').value= document.querySelector('#inputb').value.slice(0,-1);  ">Del</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
