@@ -1,0 +1,27 @@
+
+body{
+    background: #000;
+}
+
+
+.spark{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+  background: whitesmoke;
+  border: 1px solid red;
+  border-radius: 50%;
+  transition:flowup 5s ease-out 2s ;
+}
+
+@keyframes flowup{
+from{
+opacity: 1;
+transform: scale(1);
+}
+to{
+opacity: 0;
+transform: scale(0);
+}
+
+} 
