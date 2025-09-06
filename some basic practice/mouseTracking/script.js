@@ -11,7 +11,7 @@ window.addEventListener("mousemove", function (e) {
   spark.classList.add("spark");
 
   // Random color (like magic glow)
-  spark.style.background = `hsl(${20+Math.random() * 20}, 200%, 50%)`;
+  spark.style.background = `hsl(${360+Math.random() * 360}, 200%, 50%)`;
 
   // Position spark on mouse
   spark.style.left = e.clientX + "px";
@@ -22,5 +22,5 @@ window.addEventListener("mousemove", function (e) {
   // Remove after animation
   setTimeout(() => {
     spark.remove();
-  }, 60000);
+  }, 600);
 });
